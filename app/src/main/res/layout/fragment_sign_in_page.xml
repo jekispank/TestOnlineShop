@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.SignInPageFragment">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="151dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal|top"
+        android:letterSpacing="-0.03"
+        android:text="@string/sign_in"
+        android:textColor="#161826"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_first_name"
+        android:layout_width="289dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_2"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName|text"
+        android:textColor="@color/grey"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in"/>
+
+    <EditText
+        android:id="@+id/edit_last_name"
+        android:layout_width="289dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rectangle_2"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName|text"
+        android:textColor="@color/grey"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_first_name" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="289dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rectangle_2"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:inputType="textPersonName|text|textEmailAddress"
+        android:textColor="@color/grey"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_last_name" />
+
+    <Button
+        android:id="@+id/bt_sign_in"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/light_grey"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+    <TextView
+        android:id="@+id/already_hav"
+        android:layout_width="129dp"
+        android:layout_height="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:letterSpacing="-0.03"
+        android:text="@string/already_hav"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@id/bt_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/bt_sign_in" />
+
+    <TextView
+        android:id="@+id/log_in"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:letterSpacing="-0.03"
+        android:text="@string/log_in"
+        android:textColor="#254FE6"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/already_hav"
+        app:layout_constraintTop_toBottomOf="@id/bt_sign_in" />
+
+    <View
+        android:id="@+id/google_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@id/already_hav"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_google_logo"
+        />
+
+    <TextView
+        android:id="@+id/sign_in_with_google"
+        android:layout_width="117dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="top"
+        android:letterSpacing="-0.03"
+        android:text="@string/sign_in_with_google"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/google_icon"
+        app:layout_constraintTop_toBottomOf="@id/log_in" />
+
+    <View
+        android:id="@+id/apple_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/ic_apple_logo"
+        app:layout_constraintStart_toStartOf="@id/google_icon"
+        app:layout_constraintTop_toBottomOf="@id/google_icon" />
+
+    <TextView
+        android:id="@+id/sign_in_with_apple"
+        android:layout_width="107dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44.22dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.03"
+        android:text="@string/sign_in_with_apple"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/apple_icon"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_with_google" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
