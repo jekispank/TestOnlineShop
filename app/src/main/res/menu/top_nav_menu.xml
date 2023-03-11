@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_button_menu"
+        android:title="" />
+    <item
+        android:id="@+id/title"
+        android:title="@string/trade_by_bata"/>
+    <item
+        android:id="@+id/photo"
+        android:title="location"/>
+</menu>

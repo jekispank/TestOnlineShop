@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    app:cardCornerRadius="9dp"
+    tools:layout_editor_absoluteX="148dp"
+    tools:layout_editor_absoluteY="371dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="114dp"
+        android:layout_height="149dp"
+        tools:srcCompat="@drawable/example_photo" />
+
+    <Button
+        android:id="@+id/bt_add_to_cart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_fab"
+        android:foreground="@drawable/ic_fab"
+        app:backgroundTint="@color/fab_grey"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="35dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="91dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/shape_category"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal|fill_vertical"
+            android:text="@string/phones"
+            android:textColor="@color/black"
+            android:textSize="6sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="75dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/samsung_s10"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="67dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="$ 180,000"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="7sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

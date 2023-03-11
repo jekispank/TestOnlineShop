@@ -47,7 +47,6 @@
         android:layout_height="29dp"
         android:layout_marginTop="35dp"
         android:background="@drawable/rectangle_2"
-        android:hint="@string/password"
         app:boxBackgroundMode="filled"
         app:boxStrokeColor="@null"
         app:boxStrokeWidth="0dp"
@@ -64,7 +63,9 @@
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_2"
             android:fontFamily="@font/montserrat"
-            android:gravity="center"
+            android:gravity="center_horizontal"
+            android:hint="@string/password"
+            android:includeFontPadding="true"
             android:inputType="textPassword"
             android:textColor="@color/grey"
             android:textSize="11sp" />
@@ -72,7 +73,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/bt_sign_in"
+        android:id="@+id/bt_log_in"
         android:layout_width="289dp"
         android:layout_height="46dp"
         android:layout_marginTop="99dp"
