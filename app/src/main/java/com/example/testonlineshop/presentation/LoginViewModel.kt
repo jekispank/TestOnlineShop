@@ -1,5 +1,6 @@
 package com.example.testonlineshop.presentation
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,22 +10,25 @@ import com.example.testonlineshop.data.LoginDao
 
 class LoginViewModel(private val loginDao: LoginDao) : ViewModel() {
 
-    private var _checkingValue = MutableLiveData<Boolean>()
+    private val _checkingValue = MutableLiveData<Boolean>()
     val checkingValue: LiveData<Boolean> = _checkingValue
 
     /* Validation login data */
     fun checkUserFirstNameAndPassword(firstName: String, password: String): Int {
-        if (firstName.isEmpty()) return Const.FIRST_NAME_IS_EMPTY
+        return if (firstName.isEmpty()) Const.FIRST_NAME_IS_EMPTY
         else {
-            if (password.isEmpty()) return Const.PASSWORD_IS_EMPTY
-            else return Const.VALID_DATA
+            if (password.isEmpty()) {
+                Const.PASSWORD_IS_EMPTY
+            } else {
+                Const.VALID_DATA
+            }
 
         }
     }
 
-    suspend fun checkingIsUserAccountExist(firstName: String) {
-        _checkingValue.value = loginDao.isUserAccountExist(firstName)
-    }
+    suspend fun checkingIsUserAccountExist(firstName: String) =
+        loginDao.isUserAccountExist(firstName)
+
 }
 
 

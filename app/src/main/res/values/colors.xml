@@ -12,4 +12,5 @@
     <color name="fab_grey">#E5E9EF</color>
     <color name="orange_warm">#F93A3A</color>
     <color name="button_text_grey">#808080</color>
+    <color name="shade_of_black">#3F3F3F</color>
 </resources>

@@ -30,4 +30,19 @@
     <string name="thirty_three_dollars">$ 33,00</string>
     <string name="flash_sale">Flash sale</string>
     <string name="brands">Brands</string>
+
+    <!--ProfileFragment-->
+    <string name="change_photo">Change photo</string>
+    <string name="satria_adhi">Satria Adhi Pradana</string>
+    <string name="upload_item">Upload item</string>
+    <string name="trade_store">Trade store</string>
+    <string name="payment_method">Payment method</string>
+    <string name="balance">Balance</string>
+    <string name="trade_history">Trade history</string>
+    <string name="current_balance">$ 1593</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="help">Help</string>
+    <string name="log_out">Log out</string>
+    <string name="profile">Profile</string>
+
 </resources>
